@@ -3,17 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Descarga de Videos de YouTube</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00f2fe, #4facfe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
             text-align: center;
-            padding: 20px;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+        }
+        .header {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola, Mundo!</h1>
-    <p>Esta es mi primera página web.</p>
+    <div class="container">
+        <div class="header">HOLA LU</div>
+        <div class="description">Cree esta pagina para que puedas descargar videos de YouTube por acá sin virus y eso</div>
+        <form action="/download" method="post">
+            <input type="text" name="url" placeholder="Introduce la URL del video" required>
+            <button type="submit">Descargar</button>
+        </form>
+    </div>
 </body>
 </html>
